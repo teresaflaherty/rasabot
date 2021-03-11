@@ -1,0 +1,31 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_good
+  - action: utter_mood_good
+
+- story: sad path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_bad
+  - action: utter_mood_bad
+
+- story: joke liked
+  steps:
+  - intent: tell_joke
+  - action: utter_joke
+  - intent: affirm
+  - action: utter_liked_joke
+
+- story: joke disliked
+  steps:
+  - intent: tell_joke
+  - action: utter_joke
+  - intent: deny
+  - action: utter_disliked_joke

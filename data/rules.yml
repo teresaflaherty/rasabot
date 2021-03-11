@@ -1,0 +1,48 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_i_am_bot
+
+- rule: Tell the user how the bot is feeling when they ask
+  steps:
+  - intent: bot_feelings
+  - action: utter_feelings
+
+- rule: Handle a compliment from the user
+  steps:
+  - intent: compliment
+  - action: utter_compliment_response
+
+- rule: Handle an insult from the user
+  steps:
+  - intent: insult
+  - action: utter_insult_response
+
+- rule: Acknowledge that the user is feeling good
+  steps:
+  - intent: mood_good
+  - action: utter_mood_good
+
+- rule: Acknowledge that the user is feeling bad
+  steps:
+  - intent: mood_bad
+  - action: utter_mood_bad
+
+- rule: joke
+  steps:
+  - intent: tell_joke
+  - action: utter_joke
+
+- rule: greet user whenever they say hi
+  steps:
+  - intent: greet
+  - action: utter_greet

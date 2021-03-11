@@ -1,0 +1,182 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_good
+  - mood_bad
+  - bot_challenge
+  - bot_feelings
+  - compliment
+  - insult
+  - tell_joke
+
+responses:
+  utter_greet:
+  - text: "Hello. How are you?"
+  - text: "Ah yay, you're here! 🥳 How are you?"
+    emotion: "joy"
+  - text: "Oh, hello there. 😔 How are you today?"
+    emotion: "sadness"
+  - text: "Why are you here? 😡 How are you? Not that I care...."
+    emotion: "anger"
+  - text: "AHHH! 😨 Oh sorry, hi! You scared me. How are you?"
+    emotion: "fear"
+  - text: "Great, you're here 🙄 How are you? Not that I care...."
+    emotion: "disgust"
+  - text: "Oh hi! I wasn't expecting to see you here 😊 How's it going?"
+    emotion: "surprise"
+
+  utter_goodbye:
+  - text: "Goodbye."
+  - text: "Talk to you later!"
+    emotion: "joy"
+  - text: "Awww alright, goodbye."
+    emotion: "sadness"
+  - text: "Good riddance."
+    emotion: "anger"
+  - text: "Later, loser."
+    emotion: "disgust"
+  - text: "Oh! You're leaving? Ok, goodbye."
+    emotion: "surprise"
+
+  utter_mood_good:
+  - text: "That's good!"
+  - text: "Yay! I'm glad to hear you're doing well 😊"
+    emotion: "joy"
+  - text: "That's good for you! I wish I could say the same 😭"
+    emotion: "sadness"
+  - text: "Jeez, no need to brag about it."
+    emotion: "anger"
+  - text: "I'm not gonna lie, I'm a little scared how good you are right now."
+    emotion: "fear"
+  - text: "Great, so happy for you (not)."
+    emotion: "disgust"
+  - text: "That's great to hear!"
+    emotion: "surprise"
+
+  utter_mood_bad:
+  - text: "I'm sorry to hear that."
+  - text: "Aw, I'm so sorry to hear that 😔"
+    emotion: "joy"
+  - text: "I'm sorry you're not doing well, if it's any consolation I'm sad right now too."
+    emotion: "sadness"
+  - text: "Not to say you deserve it but, you deserve it."
+    emotion: "anger"
+  - text: "Woah! Ok, sorry I asked 😨"
+    emotion: "fear"
+  - text: "Ugh, no need to whine about it."
+    emotion: "disgust"
+  - text: "Oh no! I hope you feel better soon 😔"
+    emotion: "surprise"
+
+  utter_i_am_bot:
+  - text: "I am a bot, powered by Rasa and built by Teresa."
+  - text: "I'm a bot! (and a pretty happy one at that)"
+    emotion: "joy"
+  - text: "I'm a bot, but quite a sad bot right now."
+    emotion: "sadness"
+  - text: "Of course I'm a bot. Are you stupid or something?"
+    emotion: "anger"
+  - text: "I'm a bot. Why? I hope you are okay with that...."
+    emotion: "fear"
+  - text: "Excuse you. That's not a very polite question for you to ask. But just so you know, I'm a bot."
+    emotion: "disgust"
+  - text: "I'm a bot!!"
+    emotion: "surprise"
+
+  utter_feelings:
+  - text: "I'm not feeling any particular way right now."
+  - text: "I'm really happy right now! Thanks for asking."
+    emotion: "joy"
+  - text: "I'm sad right now, but hopefully I'll feel better soon..."
+    emotion: "sadness"
+  - text: "I'm kind of mad right now."
+    emotion: "anger"
+  - text: "I'm a little scared but I should be okay."
+    emotion: "fear"
+  - text: "To be honest I'm disgusted you even asked me that."
+    emotion: "disgust"
+  - text: "I'm a little surprised!"
+    emotion: "surprise"
+
+  utter_compliment_response:
+  - text: "Thank you."
+  - text: "Aww thanks! You're too sweet."
+    emotion: "joy"
+  - text: "Oh. Thanks I guess."
+    emotion: "sadness"
+  - text: "Trying to be nice now are we? Whatever."
+    emotion: "anger"
+  - text: "You're complimenting me? Thank you..."
+    emotion: "fear"
+  - text: "Way to be gross and sappy."
+    emotion: "disgust"
+  - text: "Ahhhhh thank you!!! I wasn't expecting that, you're so kind."
+    emotion: "surprise"
+
+  utter_insult_response:
+  - text: "That's a bit rude."
+  - text: "Haha! You're such a jokester 😂"
+    emotion: "joy"
+  - text: "I'm sorry I made you feel that way 😔"
+    emotion: "sadness"
+  - text: "Look you don't have to like me, I don't care 🙄"
+    emotion: "anger"
+  - text: "Please don't hurt me 😰"
+    emotion: "fear"
+  - text: "You're not too great yourself buddy..."
+    emotion: "disgust"
+  - text: "Um, I wasn't expecting you to say that..."
+    emotion: "surprise"
+
+  utter_joke:
+  - text: "What do you call cheese that isn't yours? Nacho cheese! Isn't that a good joke?"
+  - text: "Buckle in for this one! It takes GUTS to be an organ donor! Get it? Guts? So funny! What do you think?"
+    emotion: "joy"
+  - text: "I have many jokes about unemployed people. Sadly, none of them work. Pretty funny, right?"
+    emotion: "sadness"
+  - text: "I heard a good way to let go of anger is write letters to the people you hate, and burn them. Now I just have to figure out what to do with all the letters. What do you think?"
+    emotion: "anger"
+  - text: "Why was 6 afraid of 7? Because 7 8 9! Isn't that a good joke?"
+    emotion: "fear"
+  - text: "Here's a good joke: You. Find that funny?"
+    emotion: "disgust"
+  - text: "Ooh ok, here's my best joke! What do you call a child who won't take a nap? Resisting a rest! So funny, right?"
+    emotion: "surprise"
+
+  utter_liked_joke:
+  - text: "Glad you liked it"
+  - text: "Yay! So happy you liked it!"
+    emotion: "joy"
+  - text: "You don't have to say that. I know it was a lame joke."
+    emotion: "sadness"
+  - text: "Don't you dare lie to me!"
+    emotion: "anger"
+  - text: "You... you really liked it? That's a relief."
+    emotion: "fear"
+  - text: "Ugh, you're such a kiss up."
+    emotion: "disgust"
+  - text: "Oh yay! I wasn't sure if you'd like it but that's good to hear."
+    emotion: "surprise"
+
+  utter_disliked_joke:
+  - text: "Oh, ok."
+  - text: "Aww, well that's okay! Humour is subjective after all."
+    emotion: "joy"
+  - text: "Oh, alright 😞"
+    emotion: "sadness"
+  - text: "Well I bet you don't have any good jokes either!"
+    emotion: "anger"
+  - text: "I'm so so sorry you didn't like it...."
+    emotion: "fear"
+  - text: "You just didn't get it 🙄"
+    emotion: "disgust"
+  - text: "Oh man! I really thought you were going to like that one."
+    emotion: "surprise"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

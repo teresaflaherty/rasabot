@@ -1,0 +1,199 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - farewell
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - I think so 
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nope
+    - nah
+    - no way
+
+- intent: mood_good
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - I am doing well
+    - I am happy
+    - I am ecstatic
+    - I am so good
+    - I am feeling great
+    - I feel content
+    - I am doing pretty good
+    - pretty good
+    - excited
+    - I'm fantastic
+    - I'm ok
+
+- intent: mood_bad
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - feeling awkward
+    - I'm uncomfortable
+    - I'm tired
+    - feeling awkward
+    - I'm not alright
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you real or a bot?
+    - who are you?
+    - what is your name?
+
+- intent: bot_feelings
+  examples: |
+    - how are you?
+    - are you okay?
+    - how are you feeling?
+    - what is your mood?
+    - are you happy?
+    - are you sad?
+    - are you angry?
+    - are you surprised?
+    - are you scared?
+    - are you fearful?
+    - how are you feeling right now?
+    - are you alright today?
+    - what are you feeling right now?
+    - how are you doing today?
+
+- intent: compliment
+  examples: |
+    - you are nice
+    - you're really cool
+    - you are funny
+    - you are really sweet
+    - I like your name
+    - You seem really fun
+    - You're like sunshine on a cloudy day
+    - I like you
+    - I love you
+    - You have impeccable manners
+    - I like your style
+    - You're strong
+    - Is that your picture next to "charming" in the dictionary?
+    - Your kindness is a balm to all who encounter it
+    - You are brave
+    - Your insides are even more beautiful than your outside
+    - You have the courage of your convictions
+    - You're a great listener
+    - You were cool way before hipsters were cool
+    - That thing you don't like about yourself is what makes you really interesting
+    - You're inspiring
+    - You're so thoughtful
+    - When you make up your mind, nothing stands in your way
+    - You seem to really know who you are
+    - You are smart
+    - you're the best
+
+- intent: insult
+  examples: |
+    - you are stupid
+    - you're dumb
+    - you are an idiot
+    - you are annoying
+    - you are the worst
+    - You seem annoying
+    - You're a bad bot
+    - I hate you
+    - You stink
+    - You suck
+    - you're horrible
+    - you make me upset
+    - you're lame
+    - you seem like a loser
+    - You are an airhead
+    - You're a snowflake
+    - You are a dork
+    - You should stop being annoying
+    - you think you're cool but you're not
+    - You're not a good bot
+    - You make me so angry
+
+- intent: tell_joke
+  examples: |
+    - can you tell a joke?
+    - do you know any jokes?
+    - what's your favourite joke?
+    - tell me a joke
+    - jokes?
+    - tell me a funny joke
+    - do you have any jokes to tell?
+    - can you tell me a joke?
+    - do you have a good joke?
+    - joke please
+    - joke
